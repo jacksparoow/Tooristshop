@@ -1,0 +1,141 @@
+
+<div  class="w3-sidebar w3-bar-block w3-border-right" style="
+color:#131e42;width:273px;box-shadow: 1px 1px 1px 1px #555555;" id="mySidebar">
+
+  <button (click)="w3_close()" class="w3-bar-item w3-large" 
+  style="background:#00Bfff;color:#131e42; box-shadow: 2px 2px 2px 2px #555555;">
+  
+  <img src="assets/close.png" style="height:25px;margin-left:180px;
+    border-radius:25px;margin-top:8px"> </button>
+  
+   
+  
+      <a class="w3-bar-item w3-button" (click)="dashBoard()"> 
+        <img src="assets/icon/Home.png" style="height: 20px;">&nbsp; Dashboard  </a>
+      <a class="w3-bar-item w3-button" routerLink="order"> 
+          <img src="assets/icon/projects.png" style="height: 20px;">&nbsp; New Leads</a>
+      <a  class="w3-bar-item w3-button" routerLink="follow">
+        <img src="assets/icon/User.png" style="height: 20px;">&nbsp; Follow up</a>
+        <a *ngIf="true" class="w3-bar-item w3-button" routerLink="dead">
+          <img src="assets/icon/User.png" style="height: 20px;">&nbsp; Dead Leads</a>
+      <a  class="w3-bar-item w3-button" routerLink="converted">
+          <img src="assets/icon/Companies.png" style="height: 20px;">&nbsp; Converted Leads</a>
+      <a class="w3-bar-item w3-button"  routerLink="integ">
+          <img src="assets/icon/Integration.png" style="height: 20px;"> &nbsp; Cold Leads</a>
+      <a class="w3-bar-item w3-button" (click)="logOut()" routerLink="myteam"> 
+        <img src="assets/icon/Logout.png"> Logout</a>
+      <div style="margin-bottom: 20px;"></div>
+</div>
+
+
+<div class="w3-teal " >
+  <!-- <div class="my-container">
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+  </div> -->
+  <div class="w3-container " style="background:#00Bfff;color:#131e42;
+       box-shadow: 2px 2px 2px 2px #cccccc;">
+       
+      <button class="w3-button w3-teal w3-xlarge myhoverclass" (click)="w3_open()">☰</button>
+     
+              
+    
+   <div style="float:right"> 
+     <h5 style="float:left; margin-right:8px;margin-top:4px;font-size: 15px;">
+      <h5  style="float: left; font-size: 15px;">
+        {{user_name}} | {{loginCompanyName}} |
+      </h5>
+      <h5 style="float: left; margin-right:8px;font-size: 15px;">
+        
+        <a (click)="logOut()" ><span style="color:#131e42;"> &nbsp;Sign Out</span></a>
+        </h5>
+      </h5>
+      
+    
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Tooristshop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="order">Order List </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" (click)="logOut()">Sign Out</button>
+    </form>
+  </div>
+</nav> -->
